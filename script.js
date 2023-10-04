@@ -153,7 +153,7 @@ function displayCards ( recipie, cardBody){
         </div>
         <div class="timeLikeSection" >
             <div class="time">${a.time}</div>
-            <div >
+            <div class="likeComment">
             <i  class="fa-solid fa-heart toggleLike" style="color:lightgrey" ></i>
                     <span class="material-symbols-outlined">
                         mode_comment
@@ -310,23 +310,18 @@ function displayNonVeg(){
 let toggleButton = document.getElementById("mobile-navbar-btn");
 let sideBar = document.getElementById("side-bar");
 let toggleMenu = document.getElementById("mobile-nav-icon");
-
-
+let closeButton = document.createElement("div");
+closeButton.className ="material-symbols-outlined";
+closeButton.innerText="close";
+closeButton.addEventListener("click",() =>{
+    sideBar.classList.remove("showSide-bar");
+})
 
 toggleButton.addEventListener("click",() =>{
     
-
-    sideBar.classList.toggle("showSide-bar");
-    if(toggleMenu.innerText== "menu"){
-
-    sideBar.appendChild(toggleButton);
-    toggleMenu.innerText= "close";
-    }
-    else{
-        
-        toggleMenu.style.display="block";
-    }
-
+    sideBar.classList.add("showSide-bar");
+    sideBar.appendChild(closeButton);
+    
     
     
     
