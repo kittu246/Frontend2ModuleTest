@@ -168,6 +168,33 @@ function displayCards ( recipie, cardBody){
     }
 
 
+    //adding like functionality
+
+    for(let j=0;j<likeHeart.length;j++){
+        console.log("hey");
+    likeHeart[j].addEventListener("click",likeButtonFunctionality)
+    
+    }  
+      
+    function likeButtonFunctionality (event){
+      
+            console.log("Lun");
+    
+      if(event.target.classList[2]=== 'true'){
+        event.target.classList.remove('true');
+        event.target.classList.add('false');
+      }
+      else{
+        event.target.classList.remove('false');
+        event.target.classList.add('true');
+      }
+        
+    
+    
+    
+        }
+    
+
 }
 
 
@@ -313,32 +340,10 @@ toggleButton.addEventListener("click",() =>{
 })
 
 
-// like Button functionality
 
 
 
-for(let j=0;j<likeHeart.length;j++){
-likeHeart[j].addEventListener("click",likeButtonFunctionality)
 
-}  
-  
-function likeButtonFunctionality (event){
-  
-        console.log("Lun");
-
-  if(event.target.classList[2]=== 'true'){
-    event.target.classList.remove('true');
-    event.target.classList.add('false');
-  }
-  else{
-    event.target.classList.remove('false');
-    event.target.classList.add('true');
-  }
-    
-
-
-
-    }
 
 
 
