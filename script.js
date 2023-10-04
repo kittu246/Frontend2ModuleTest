@@ -144,7 +144,7 @@ function displayCards ( recipie, cardBody){
         <div class="nameRating">
             <h3 class="name">${a.name}</h3>
             <div class="ratingSection" >
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined" style="color:rgb(253,192,64,1);">
                     grade
                     </span>
                     <p class="rating">${a.rating}</p>
