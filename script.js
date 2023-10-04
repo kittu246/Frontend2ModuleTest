@@ -154,7 +154,7 @@ function displayCards ( recipie, cardBody){
         <div class="timeLikeSection" >
             <div class="time">${a.time}</div>
             <div >
-            <i  class="fa-solid fa-heart ${a.isLiked} toggleLike" ></i>
+            <i  class="fa-solid fa-heart toggleLike" style="color:lightgrey" ></i>
                     <span class="material-symbols-outlined">
                         mode_comment
                         </span>
@@ -171,28 +171,21 @@ function displayCards ( recipie, cardBody){
     //adding like functionality
 
     for(let j=0;j<likeHeart.length;j++){
-        console.log("hey");
+        
     likeHeart[j].addEventListener("click",likeButtonFunctionality)
     
     }  
       
     function likeButtonFunctionality (event){
       
-            console.log("Lun");
+            
     
-      if(event.target.classList[2]=== 'true'){
-        event.target.classList.remove('true');
-        event.target.classList.add('false');
-      }
-      else{
-        event.target.classList.remove('false');
-        event.target.classList.add('true');
-      }
+      event.target.classList.toggle("likeButtonColor");
         
     
     
     
-        }
+    }
     
 
 }

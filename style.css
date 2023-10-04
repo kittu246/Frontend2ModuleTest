@@ -220,6 +220,10 @@ border-radius: 16px;
     color: rgb(197, 191, 191);
 }
 
+.likeButtonColor{
+    color: red !important;
+}
+
 #mobile-navbar-btn{
     display: none;
     cursor:pointer
