@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend2Module</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Nunito:wght@300;400;700&family=Poppins:wght@200;300;400&family=Young+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="my-nav">
+
+      <div id="mobile-navbar-btn">
+        <div class="material-symbols-outlined" id="mobile-nav-icon">
+            menu
+        </div>
+    </div>  
+      <div id="logo">
+        <img src="./assets/Cookpal 1.png" />
+      </div>
+      <div id="options">
+        <ul>
+          <li>Home</li>
+          <li>Explore</li>
+          <li>Help</li>
+        </ul>
+      </div>
+      <div id="profile">
+        <img src="./assets/Profile.png" />
+      </div>
+    </nav>
+    <div id="side-bar" class="hideSide-bar">
+ 
+      <div>
+        <ul>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Help</li>
+          </ul>
+        </div>
+        
+
+
+    </div>
+    <section  class="main">
+      <div >
+        <div id="heroSection">
+          <img id="heroImage" src="./assets/Rectangle 20.png" />
+        </div>
+        <p id="searchpara">Search For Recipes</p>
+        <div id="searchBar">
+          <input placeholder="search for recipes" />
+          <button id="searchBarButton">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+        <div class="recipeOptions">
+          <button id="card-1" class="card">
+            <p>All Recipes</p>
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </button>
+
+          <button id="card-2" class="card">
+            <p>Veg Recipes Only</p>
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </button>
+
+          <button id="card-3" class="card">
+            <p>Non Veg Recipes</p>
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </button>
+        </div>
+
+        <div class="RecipeCardSection">
+          <div id="leftSection">
+            <p>Filter</p>
+            <p>Rating</p>
+            <div>
+              <div id="aboveCheckbox">
+                <input id="above" type="checkbox" />
+                <label for="above">4 and Above</label>
+              </div>
+              <div id="belowCheckbox">
+                <input id="below" type="checkbox" />
+                <label for="below">Below 4</label>
+              </div>
+            </div>
+          </div>
+          <div id="rightSection"></div>
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="upper">
+            <div class="left">
+                <img src="./assets/Cookpal 1.png"></img>
+                <p>
+                    Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!
+                </p>
+
+                
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Resource</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Home</td>
+                        <td>Blog</td>
+                    </tr>
+                    <tr>
+                        <td>Explore</td>
+                        <td>Use Class</td>
+                    </tr>
+                    <tr>
+                        <td>Team</td>
+                        <td>Testimonials</td>
+                    </tr>
+                    <tr>
+                        <td>About Us</td>
+                        <td>Insight</td>
+                    </tr>
+                    <tr>
+                        <td>Activity</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="right">
+                <img src="./assets/Cookpal 1.png"></img>
+                <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="lower"></div>
+    </footer>
+    </section>
+
+  
+
+    <script src="./script.js"></script>
+  </body>
+</html>
