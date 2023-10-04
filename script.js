@@ -218,7 +218,7 @@ let filterData = recipie.filter((ele) =>{
 
 displayCards(filterData, cardBody);
 
-
+input.value = "";
 
 
 }
