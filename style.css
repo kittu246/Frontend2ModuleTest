@@ -435,7 +435,7 @@ line-height: 20px; /* 125% */
 
     .my-nav{
         
-        justify-content: space-evenly;
+        justify-content: space-around;
         
     
     }
