@@ -50,23 +50,24 @@
 
 #heroSection{
 
-    width: 100%;
-   height: 50vh;
+   width:100%;
+  
     border-radius: 20px;
     background-image: url("./assets/Rectangle\ 20.png");
     padding:6rem 4rem;
     box-sizing: border-box;
     background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
-   background-size: cover;
+   background-size:cover;
    margin-bottom: 2rem;
    
 
 }
 #heroSection>p:first-child{
-    color: #DC582A;
+color: #DC582A;
 
 font-size: 30px;
 font-style: normal;
@@ -431,6 +432,66 @@ line-height: 20px; /* 125% */
 
 @media screen and (max-width:767px) {
 
+
+    .my-nav{
+        
+        justify-content: space-evenly;
+        
+    
+    }
+
+
+    #heroSection{
+
+       height:30vh;
+         
+       padding:5rem 2rem;
+     
+     }
+
+     #heroSection>p:first-child{
+       
+        
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 97%; /* 50.8px */
+        
+        }
+        #heroSection>p:nth-child(2){
+          
+        
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 97%; /* 50.8px */
+        
+        }
+        #heroSection>p:nth-child(3){
+        
+            color: #FFF;
+        
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 97%; /* 25.4px */
+        }
+
+        #searchpara{
+            font-size: 20px;
+        }
+
+        
+
+        #searchBarButton>span{
+         padding:8px;  
+        }
+
+        .mycard{
+            
+        padding:20px;
+        
+        }
     #mobile-navbar-btn{
         display: block; 
     }
@@ -442,6 +503,9 @@ line-height: 20px; /* 125% */
     .upper{
          flex-direction: column;
     }
+    
+
+    
 
     
 }
