@@ -327,6 +327,26 @@ toggleButton.addEventListener("click",() =>{
     
 })
 
+let profileButton = document.getElementById("profile");
+let rightSideBar = document.getElementById("rightside-bar");
+
+let RightCloseButton = document.createElement("div");
+RightCloseButton.className ="material-symbols-outlined";
+RightCloseButton.classList.add("closeProfileButton");
+RightCloseButton.innerText="close";
+RightCloseButton.addEventListener("click",() =>{
+    rightSideBar.classList.remove("showRightSide-bar");
+})
+profileButton.addEventListener("click",() =>{
+    
+    rightSideBar.classList.add("showRightSide-bar");
+    rightSideBar.appendChild(RightCloseButton);
+    
+    
+    
+    
+})
+
 
 
 

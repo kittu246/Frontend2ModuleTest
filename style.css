@@ -12,7 +12,7 @@
     align-items: center;
     gap:100px;
     padding:1.5rem 2.5rem;
-    margin-bottom: -60px;
+    margin-bottom: -200px;
 
 }
 #logo{
@@ -357,6 +357,51 @@ object-fit:cover;
     top:0;
 }
 
+.showRightSide-bar{
+    
+    padding: 2rem .5rem;
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: white;
+    height:100vh;
+    width:400px;
+   gap:20px;
+    position: absolute;
+    right:0;
+    transform: translate(0%) !important;
+    top:0;
+    
+}
+
+.top{
+    width: 90%;
+    display:flex;
+    gap:6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium{
+    width: 80%;
+    display:flex;
+    justify-content:space-evenly;
+
+}
+.last{
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.medium>button,.last>button {
+    height:40px;
+    width:100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #509d31;
+}
+
 
 .upper{
     display:flex;
@@ -365,6 +410,13 @@ object-fit:cover;
     align-items: start;
 
     margin: 4rem 0rem;
+
+}
+
+.closeProfileButton {
+    position:absolute;
+    top:0;
+    right:0;
 
 }
 .left{
